@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply bg-mist text-forest;
+}
+
+button {
+  @apply transition-all duration-200;
+}
+
+input, textarea, select {
+  @apply bg-mist text-forest;
+  @apply transition-colors duration-200;
+}
