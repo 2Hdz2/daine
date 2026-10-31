@@ -100,7 +100,7 @@ export const Inventory: React.FC = () => {
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
-            className="bg-forest hover:bg-forest/90 text-mist font-semibold py-3 px-4 rounded-lg transition-colors flex items-center gap-2"
+            className="bg-lime hover:bg-lime/90 text-forest font-semibold py-3 px-4 rounded-lg transition-colors flex items-center gap-2"
           >
             <Plus size={20} />
             Add Item
@@ -162,7 +162,7 @@ export const Inventory: React.FC = () => {
               <div className="col-span-1 md:col-span-4 flex gap-2">
                 <button
                   type="submit"
-                  className="flex-1 bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors"
+                  className="flex-1 bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors"
                 >
                   Add to Inventory
                 </button>
@@ -234,13 +234,13 @@ export const Inventory: React.FC = () => {
           <div className="mt-8 flex gap-4">
             <button
               onClick={() => navigate('/generate-meal-prep')}
-              className="flex-1 bg-forest hover:bg-forest/90 text-mist font-semibold py-3 rounded-lg transition-colors"
+              className="flex-1 bg-lime hover:bg-lime/90 text-forest font-semibold py-3 rounded-lg transition-colors"
             >
               Generate Meal Recommendations
             </button>
             <button
               onClick={() => navigate('/calendar/daily')}
-              className="flex-1 bg-forest hover:bg-forest/90 text-mist font-semibold py-3 rounded-lg transition-colors"
+              className="flex-1 bg-lime hover:bg-lime/90 text-forest font-semibold py-3 rounded-lg transition-colors"
             >
               View Meal Calendar
             </button>

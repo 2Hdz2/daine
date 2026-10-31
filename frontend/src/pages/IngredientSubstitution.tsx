@@ -87,7 +87,7 @@ export const IngredientSubstitution: React.FC = () => {
             <button
               onClick={handleSearchSubstitutes}
               disabled={isLoading}
-              className="bg-forest hover:bg-forest/90 disabled:bg-sage text-mist font-semibold py-2 px-6 rounded-lg transition-colors flex items-center gap-2"
+              className="bg-lime hover:bg-lime/90 disabled:bg-sage text-forest font-semibold py-2 px-6 rounded-lg transition-colors flex items-center gap-2"
             >
               {isLoading && <Loader className="animate-spin" size={16} />}
               Search
@@ -208,7 +208,7 @@ export const IngredientSubstitution: React.FC = () => {
                     toast.success(`Substitution applied: ${ingredient} → ${selectedSubstitute.name}`);
                     navigate('/generate-meal-prep');
                   }}
-                  className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-3 rounded-lg transition-colors"
+                  className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-3 rounded-lg transition-colors"
                 >
                   Apply Substitution
                 </button>

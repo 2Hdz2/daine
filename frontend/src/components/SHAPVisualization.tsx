@@ -41,29 +41,29 @@ export const SHAPVisualization: React.FC<SHAPVisualizationProps> = ({ contributi
         <h3 className="font-semibold text-forest mb-4">Feature Impact Analysis</h3>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={sortedContributions} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
-            <CartesianGrid stroke="#B7D7B0" strokeDasharray="3 3" />
+            <CartesianGrid stroke="#71d871" strokeDasharray="3 3" />
             <XAxis 
               dataKey="feature" 
               angle={-45}
               textAnchor="end"
               height={100}
               interval={0}
-              tick={{ fontSize: 12, fill: '#355E3B' }}
-              stroke="#355E3B"
+              tick={{ fontSize: 12, fill: '#487935' }}
+              stroke="#487935"
             />
             <YAxis
-              label={{ value: 'SHAP Value', angle: -90, position: 'insideLeft', fill: '#355E3B' }}
-              tick={{ fill: '#355E3B' }}
-              stroke="#355E3B"
+              label={{ value: 'SHAP Value', angle: -90, position: 'insideLeft', fill: '#487935' }}
+              tick={{ fill: '#487935' }}
+              stroke="#487935"
             />
             <Tooltip 
-              contentStyle={{ backgroundColor: '#F0F7EE', borderColor: '#B7D7B0', color: '#355E3B' }}
+              contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#71d871', color: '#487935' }}
               formatter={(value: number) => value.toFixed(3)}
               labelFormatter={(label) => `Feature: ${label}`}
             />
             <Bar 
               dataKey="shap_contribution" 
-              fill="#355E3B"
+              fill="#487935"
               radius={[4, 4, 0, 0]}
             />
           </BarChart>

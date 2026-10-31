@@ -133,7 +133,7 @@ export const WhatIfAnalysis: React.FC = () => {
           <button
             onClick={handleAnalyze}
             disabled={isLoading || !foodId || !description}
-            className="w-full bg-forest hover:bg-forest/90 disabled:bg-sage text-mist font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+            className="w-full bg-lime hover:bg-lime/90 disabled:bg-sage text-forest font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
           >
             {isLoading && <Loader className="animate-spin" size={18} />}
             {isLoading ? 'Analyzing...' : 'Analyze What-If'}
@@ -226,7 +226,7 @@ export const WhatIfAnalysis: React.FC = () => {
               </p>
               <button
                 onClick={() => toast.success('Added to meal plan (coming soon)')}
-                className="mt-4 bg-forest hover:bg-forest/90 text-mist font-semibold py-2 px-4 rounded-lg transition-colors"
+                className="mt-4 bg-lime hover:bg-lime/90 text-forest font-semibold py-2 px-4 rounded-lg transition-colors"
               >
                 Apply to Meal Plan
               </button>

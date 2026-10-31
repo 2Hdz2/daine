@@ -224,7 +224,7 @@ export const Profile: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSaving || !formData.dietary_condition}
-                className="flex-1 bg-forest hover:bg-forest/90 disabled:bg-sage text-mist font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="flex-1 bg-lime hover:bg-lime/90 disabled:bg-sage text-forest font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 {isSaving && <Loader className="animate-spin" size={18} />}
                 {isSaving ? 'Saving...' : 'Save Profile'}

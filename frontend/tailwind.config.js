@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        forest: "#355E3B",
-        sage: "#B7D7B0",
-        mist: "#F0F7EE",
+        forest: "#487935",
+        sage: "#71d871",
+        mist: "#FFFFFF",
+        lime: "#71d871",
+        ink: "#000000",
       },
     },
   },

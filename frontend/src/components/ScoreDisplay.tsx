@@ -50,9 +50,9 @@ export const ScoreDisplay: React.FC<ScoreDisplayProps> = ({
       <div className="w-full bg-sage rounded-full h-2">
         <div 
           className={`h-2 rounded-full transition-all ${
-            score >= 75 ? 'bg-forest' :
-            score >= 50 ? 'bg-forest' :
-            'bg-forest'
+            score >= 75 ? 'bg-lime' :
+            score >= 50 ? 'bg-lime' :
+            'bg-lime'
           }`}
           style={{ width: `${Math.min(score, 100)}%` }}
         />

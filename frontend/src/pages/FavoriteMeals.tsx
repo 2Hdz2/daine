@@ -115,7 +115,7 @@ export const FavoriteMeals: React.FC = () => {
               onClick={() => setSortBy(option)}
               className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors capitalize ${
                 sortBy === option
-                  ? 'bg-forest text-mist'
+                  ? 'bg-lime text-forest'
                   : 'bg-sage text-forest hover:bg-sage/80'
               }`}
             >
@@ -135,7 +135,7 @@ export const FavoriteMeals: React.FC = () => {
             <p className="text-forest/70 mb-6">Start generating recommendations and save your favorites!</p>
             <button
               onClick={() => navigate('/generate-meal-prep')}
-              className="bg-forest hover:bg-forest/90 text-mist font-semibold py-2 px-6 rounded-lg transition-colors"
+              className="bg-lime hover:bg-lime/90 text-forest font-semibold py-2 px-6 rounded-lg transition-colors"
             >
               Generate Recommendations
             </button>
@@ -206,7 +206,7 @@ export const FavoriteMeals: React.FC = () => {
                   {/* Action Button */}
                   <button
                     onClick={() => navigate(`/meal/${favorite.id}`)}
-                    className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2"
+                    className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <Eye size={16} />
                     View Details

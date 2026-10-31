@@ -109,7 +109,7 @@ export const MealCalendar: React.FC = () => {
               {/* Generate Plan Button */}
               <button
                 onClick={() => setShowForm(!showForm)}
-                className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2 mb-4"
+                className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2 mb-4"
               >
                 <Plus size={18} />
                 Generate Plan
@@ -159,7 +159,7 @@ export const MealCalendar: React.FC = () => {
                   <button
                     onClick={handleGenerateDailyPlan}
                     disabled={isLoading}
-                    className="flex-1 bg-forest hover:bg-forest/90 disabled:bg-sage text-mist font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 bg-lime hover:bg-lime/90 disabled:bg-sage text-forest font-semibold py-3 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     {isLoading && <Loader className="animate-spin" size={18} />}
                     {isLoading ? 'Generating...' : 'Generate Plan'}
@@ -216,7 +216,7 @@ export const MealCalendar: React.FC = () => {
                           <div className="flex gap-2">
                             <button
                               onClick={() => navigate(`/meal/${encodeURIComponent(meal.food_id)}`)}
-                              className="flex-1 bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors text-sm"
+                              className="flex-1 bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors text-sm"
                             >
                               View Details
                             </button>
@@ -226,7 +226,7 @@ export const MealCalendar: React.FC = () => {
                               className={`flex-1 font-semibold py-2 rounded-lg transition-colors text-sm ${
                                 meal.eaten
                                   ? 'bg-sage text-forest/80 cursor-default'
-                                  : 'bg-forest hover:bg-forest/90 text-mist'
+                                  : 'bg-lime hover:bg-lime/90 text-forest'
                               }`}
                             >
                               {meal.eaten ? 'Eaten ✓' : 'Mark Eaten'}
@@ -253,7 +253,7 @@ export const MealCalendar: React.FC = () => {
                 <p className="text-forest/80 text-lg mb-4">No meal plan selected</p>
                 <button
                   onClick={handleGenerateDailyPlan}
-                  className="bg-forest hover:bg-forest/90 text-mist font-semibold py-2 px-6 rounded-lg transition-colors"
+                  className="bg-lime hover:bg-lime/90 text-forest font-semibold py-2 px-6 rounded-lg transition-colors"
                 >
                   Generate Today's Plan
                 </button>

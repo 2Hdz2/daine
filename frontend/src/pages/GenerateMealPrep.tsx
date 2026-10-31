@@ -221,7 +221,7 @@ export const GenerateMealPrep: React.FC = () => {
               <button
                 onClick={handleGenerateRecommendations}
                 disabled={isLoading}
-                className="w-full min-h-[42px] bg-forest hover:bg-forest/90 disabled:bg-sage text-mist font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2"
+                className="w-full min-h-[42px] bg-lime hover:bg-lime/90 disabled:bg-sage text-forest font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
                 {isLoading && <Loader className="animate-spin" size={16} />}
                 Generate Recommendations
@@ -295,7 +295,7 @@ export const GenerateMealPrep: React.FC = () => {
                     onClick={() => setSortBy(value)}
                     className={`px-3 py-1 rounded-full text-sm font-semibold transition-colors ${
                       sortBy === value
-                        ? 'bg-forest text-mist'
+                        ? 'bg-lime text-forest'
                         : 'bg-sage text-forest hover:bg-sage/80'
                     }`}
                   >

@@ -148,7 +148,7 @@ export const MealDetails: React.FC = () => {
                     </div>
                     <div className="w-full bg-sage rounded-full h-2">
                       <div
-                        className="h-2 rounded-full bg-forest"
+                        className="h-2 rounded-full bg-lime"
                         style={{ width: `${meal.class_probabilities.recommended * 100}%` }}
                       />
                     </div>
@@ -158,7 +158,7 @@ export const MealDetails: React.FC = () => {
                     </div>
                     <div className="w-full bg-sage rounded-full h-2">
                       <div
-                        className="h-2 rounded-full bg-forest"
+                        className="h-2 rounded-full bg-lime"
                         style={{ width: `${meal.class_probabilities.moderate * 100}%` }}
                       />
                     </div>
@@ -168,7 +168,7 @@ export const MealDetails: React.FC = () => {
                     </div>
                     <div className="w-full bg-sage rounded-full h-2">
                       <div
-                        className="h-2 rounded-full bg-forest"
+                        className="h-2 rounded-full bg-lime"
                         style={{ width: `${meal.class_probabilities.not_recommended * 100}%` }}
                       />
                     </div>
@@ -187,19 +187,19 @@ export const MealDetails: React.FC = () => {
                       error: (error: unknown) => getApiErrorMessage(error, 'Failed to add')
                     }
                   )}
-                  className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors"
+                  className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors"
                 >
                   ♥ Add to Favorites
                 </button>
                 <button
                   onClick={() => navigate('/what-if', { state: { foodId: meal.food_id } })}
-                  className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors"
+                  className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors"
                 >
                   Analyze What-If
                 </button>
                 <button
                   onClick={() => navigate('/substitutions', { state: { foodId: meal.food_id } })}
-                  className="w-full bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors"
+                  className="w-full bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors"
                 >
                   Find Substitutes
                 </button>
@@ -279,7 +279,7 @@ export const MealDetails: React.FC = () => {
                         key={ingredient.id ?? `${name}-${index}`}
                         className={`rounded-full px-3 py-1.5 text-sm ${
                           available
-                            ? 'border border-forest bg-forest font-semibold text-mist'
+                            ? 'border border-lime bg-lime font-semibold text-forest'
                             : optional
                               ? 'border border-dashed border-forest bg-mist text-forest'
                               : 'border border-sage bg-mist text-forest'

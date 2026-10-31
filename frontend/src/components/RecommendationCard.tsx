@@ -120,8 +120,8 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
             {meal.suitability_score != null && <div className="w-full bg-sage rounded-full h-2 mt-1">
               <div 
                 className={`h-2 rounded-full ${
-                  meal.suitability_score >= 75 ? 'bg-forest' :
-                  meal.suitability_score >= 50 ? 'bg-forest' :
+                  meal.suitability_score >= 75 ? 'bg-lime' :
+                  meal.suitability_score >= 50 ? 'bg-lime' :
                   'bg-forest'
                 }`}
                 style={{ width: `${Math.min(meal.suitability_score, 100)}%` }}
@@ -204,7 +204,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
                   key={ingredient.id ?? `${name}-${index}`}
                   className={`rounded-full px-2.5 py-1 text-xs ${
                     available
-                      ? 'border border-forest bg-forest font-semibold text-mist'
+                      ? 'border border-lime bg-lime font-semibold text-forest'
                       : optional
                         ? 'border border-dashed border-forest bg-mist text-forest'
                         : 'border border-sage bg-mist text-forest'
@@ -240,7 +240,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
       <div className="px-4 py-3 border-t border-sage flex gap-2">
         <button
           onClick={onViewDetails}
-          className="flex-1 bg-forest hover:bg-forest/90 text-mist font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-1"
+          className="flex-1 bg-lime hover:bg-lime/90 text-forest font-semibold py-2 rounded-lg transition-colors flex items-center justify-center gap-1"
         >
           View Details
           <ChevronRight size={16} />
